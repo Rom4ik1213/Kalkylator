@@ -50,11 +50,12 @@ margin: auto;
 
         #result {
             background-color: #fff;
-            border-radius: 5px;
-            padding: 20px;
+           
+            padding:  15px;
             display: none;
             width: fit-content;
-margin: auto;
+            text-align: center;
+margin: 0 auto ;
         }
 
         h2 {
@@ -81,13 +82,13 @@ margin: auto;
         <input type="number" id="exam-grade" step="0.01">
 
         <div><button type="button" onclick="calculateGrade()">Рассчитать</button></div>
-    </form>
+   
 
     <div id="result">
         <h2>Итоговая оценка:</h2>
         <p id="final-grade"></p>
     </div>
-
+</form>
     <script>
         function calculateGrade() {
             var currentRating = parseFloat(document.getElementById('current-rating').value);
